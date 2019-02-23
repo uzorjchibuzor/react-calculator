@@ -1,0 +1,47 @@
+
+#root {
+  width: 700px;
+  
+  #app {
+
+    .display-bar {
+        background: gray;
+        height: 100px;
+        color: white;
+        font-weight: 700;
+        padding: 20px;
+        text-align: right;
+    }
+    
+    .button-panel {
+
+
+        .group-row {
+          height: 100px;
+          display: flex;
+        }
+
+        .number-buttons, .zero-button {
+            text-align: center;
+            justify-items: center;
+            font-weight: 700;
+            border: 1px solid #999;
+        }
+
+        .number-buttons {
+            flex: 1;
+        }
+        button[color='orange'] {
+            background: orange;
+        }
+
+        button[wide=true] {
+            flex:2;
+        }
+    }
+
+  }
+
+
+
+}
