@@ -1,3 +1,8 @@
+# A Calculator application built with React JS
+
+### By [Chibuzor Efedigbue](https://www.github.com/uzorjchibuzor)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
