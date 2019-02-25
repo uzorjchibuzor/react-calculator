@@ -2,12 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 
-const Button = (props) => ( <button  onClick={() => props.onClick()} color={ props.color ? props.color : 'orange'}
-  className={props.name === '0' ? 'zero-button ' : 'number-buttons ' } > { props.name }
- 
-  </button> )
-Button.propTypes = {
-    name: PropTypes.string.isRequired
+class Button extends React.Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    // color: PropTypes.string.isRequired,
+  }
+  render() {
+    let buttonClass = ''
+    buttonClass += (this.props.color === 'orange') ? 'orange ' : 'gray '
+    buttonClass += (this.props.name === '0') ? 'zero-button ' : 'number-buttons '
+
+    return (
+      <button
+        className={ buttonClass }
+        onClick={this.props.onClick}
+      >
+        {this.props.name}
+      </button>
+    )
+  }
 }
 
 

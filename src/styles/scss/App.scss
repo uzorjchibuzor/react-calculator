@@ -1,6 +1,7 @@
 
 #root {
   width: 700px;
+  margin: 30px auto;
   
   #app {
 
@@ -11,6 +12,7 @@
         font-weight: 700;
         padding: 20px;
         text-align: right;
+        font-size: 80px;
     }
     
     .button-panel {
@@ -31,8 +33,16 @@
         .number-buttons {
             flex: 1;
         }
-        button[color='orange'] {
+
+        .zero-button{
+            width: 50%;
+        }
+        button.orange {
             background: orange;
+        }
+
+        button.gray {
+            background: #eee;
         }
 
         button[wide=true] {

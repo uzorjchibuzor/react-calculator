@@ -13,7 +13,7 @@ const ButtonPanel = (props) => {
   const panels = buttonGroups.map((group, index) => {
       return (
     <div key={group+index} className='group-row'>
-      {group.map((cell, index) => <Button name={cell} key={cell+index} onClick={ () => props.onClick()} />)}
+      {group.map((cell) => <Button name={cell} color={['÷', 'X', '+', '-', '='].includes(cell) ? 'orange' : 'gray'} key={cell} onClick={  props.onClick(cell) } />)}  
       
     </div>
    )
