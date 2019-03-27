@@ -1,0 +1,31 @@
+#root {
+  width: 700px;
+  margin: 30px auto; }
+  #root #app .display-bar {
+    background: gray;
+    height: 100px;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    text-align: right;
+    font-size: 80px; }
+  #root #app .button-panel .group-row {
+    height: 100px;
+    display: flex; }
+  #root #app .button-panel .number-buttons, #root #app .button-panel .zero-button {
+    text-align: center;
+    justify-items: center;
+    font-weight: 700;
+    border: 1px solid #999; }
+  #root #app .button-panel .number-buttons {
+    flex: 1; }
+  #root #app .button-panel .zero-button {
+    width: 50%; }
+  #root #app .button-panel button.orange {
+    background: orange; }
+  #root #app .button-panel button.gray {
+    background: #eee; }
+  #root #app .button-panel button[wide=true] {
+    flex: 2; }
+
+/*# sourceMappingURL=App.css.map */

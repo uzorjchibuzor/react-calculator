@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import App from './components/App'
+import './styles/css/index.css';
 
-const Calculator = (props) => {
-    return (
-        <div>Calculator</div>
-    )
-}
 
 ReactDOM.render(
-    <Calculator />,
+    <App />,
     document.getElementById('root')
-  );
+);

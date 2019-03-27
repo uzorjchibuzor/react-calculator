@@ -1,0 +1,57 @@
+
+#root {
+  width: 700px;
+  margin: 30px auto;
+  
+  #app {
+
+    .display-bar {
+        background: gray;
+        height: 100px;
+        color: white;
+        font-weight: 700;
+        padding: 20px;
+        text-align: right;
+        font-size: 80px;
+    }
+    
+    .button-panel {
+
+
+        .group-row {
+          height: 100px;
+          display: flex;
+        }
+
+        .number-buttons, .zero-button {
+            text-align: center;
+            justify-items: center;
+            font-weight: 700;
+            border: 1px solid #999;
+        }
+
+        .number-buttons {
+            flex: 1;
+        }
+
+        .zero-button{
+            width: 50%;
+        }
+        button.orange {
+            background: orange;
+        }
+
+        button.gray {
+            background: #eee;
+        }
+
+        button[wide=true] {
+            flex:2;
+        }
+    }
+
+  }
+
+
+
+}
